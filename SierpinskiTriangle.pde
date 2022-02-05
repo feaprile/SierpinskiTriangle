@@ -16,7 +16,7 @@ public void draw() {
 }
 public void sierpinski(int x, int y, int len) {
   if (len <= 30) {
-    fill(x,y,(x+y)/6);
+    fill(x,y,(x+y)/1.5);
     triangle(x, y, x+len/2, y-len, x+len, y);
   } else {
     sierpinski(x, y, len/2);
@@ -26,7 +26,7 @@ public void sierpinski(int x, int y, int len) {
 }
 public void secondSierpinski(int x, int y, int len) {
   if (len<=30) {
-    fill(x,y,(x+y)/6);
+    fill(x,y,(x+y)/3);
     triangle(x, y, x-len/2, y+len, x-len, y);
   } else {
     secondSierpinski(x, y, len/2);
@@ -48,7 +48,7 @@ public void thirdSierpinski(int x, int y, int len) {
 
 public void fourthSierpinski(int x, int y, int len) {
   if (len<=30) {
-    fill(x,y,(x+y)/6);
+    fill(x,y,(x+y)/8);
     triangle(x, y, x-len/2, y+len, x-len, y);
   } else {
     fourthSierpinski(x, y, len/2);
